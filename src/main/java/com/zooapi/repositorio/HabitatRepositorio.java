@@ -1,0 +1,24 @@
+package com.zooapi.repositorio;
+
+import com.zooapi.model.Habitat;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Service
+public class HabitatRepositorio {
+    private int habitatId = 1;
+
+    List<Habitat> habitats = new ArrayList<>();
+
+    public HabitatRepositorio(){}
+        public Habitat guardarHabitat(Habitat habitat){
+            habitats.add(habitat);
+            habitat.setHabitatId(habitatId);
+            habitatId++;
+            return habitat;
+
+    }
+
+}
