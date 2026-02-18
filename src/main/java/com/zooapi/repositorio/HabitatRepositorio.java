@@ -21,4 +21,11 @@ public class HabitatRepositorio {
 
     }
 
+    public List<Habitat> obtenerHabitats() {
+        return habitats;
+    }
 }
+
+
+//en esta capa se conecta con la base de datos
+//
