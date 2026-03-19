@@ -10,10 +10,11 @@ import java.util.List;
 public class HabitatServicio {
     private final HabitatRepositorio habitatRepositorio;
 
-    public HabitatServicio(HabitatRepositorio habitatRepositorio){
+    public HabitatServicio(HabitatRepositorio habitatRepositorio) {
         this.habitatRepositorio = new HabitatRepositorio();
     }
-    public List<Habitat> obtenerHabitats(){
+
+    public List<Habitat> obtenerHabitats() {
         return habitatRepositorio.obtenerHabitats();
     }
 //pojos

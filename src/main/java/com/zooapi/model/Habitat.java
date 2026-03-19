@@ -8,7 +8,7 @@ import java.util.List;
 @Setter
 @Getter
 public class Habitat {
-    public Habitat (String nombre, int capacidad, int habitatId){
+    public Habitat(String nombre, int capacidad, int habitatId) {
         this.nombre = nombre;
         this.animales = animales;
         this.capacidad = capacidad;

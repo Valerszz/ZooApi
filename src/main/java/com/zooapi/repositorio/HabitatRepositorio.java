@@ -12,12 +12,14 @@ public class HabitatRepositorio {
 
     List<Habitat> habitats = new ArrayList<>();
 
-    public HabitatRepositorio(){}
-        public Habitat guardarHabitat(Habitat habitat){
-            habitats.add(habitat);
-            habitat.setHabitatId(habitatId);
-            habitatId++;
-            return habitat;
+    public HabitatRepositorio() {
+    }
+
+    public Habitat guardarHabitat(Habitat habitat) {
+        habitats.add(habitat);
+        habitat.setHabitatId(habitatId);
+        habitatId++;
+        return habitat;
 
     }
 

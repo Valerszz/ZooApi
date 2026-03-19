@@ -16,15 +16,14 @@ import java.util.List;
 public class HabitatControlador {
     private final HabitatServicio habitatServicio;
 
-    public HabitatControlador (HabitatServicio habitatServicio){
+    public HabitatControlador(HabitatServicio habitatServicio) {
         this.habitatServicio = habitatServicio;
     }
 
     @GetMapping
-    public ResponseEntity<List<Habitat>> obtenerHabitats(){
+    public ResponseEntity<List<Habitat>> obtenerHabitats() {
         return new ResponseEntity<>(habitatServicio.obtenerHabitats(), HttpStatus.OK);
     }
-
 
 
 }
